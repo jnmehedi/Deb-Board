@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBoard - Blogs</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-[#f1f5ff] min-h-screen">
+
+    <div class="max-w-[1180px] mx-auto px-4 py-5">
+
+        <!-- Header -->
+        <header class="bg-white rounded-2xl px-6 py-4 shadow-sm flex items-center justify-between">
+
+            <div class="flex items-center gap-3">
+
+                <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
+
+                    <div class="w-7 h-7 border-4 border-white rounded-md"></div>
+
+                </div>
+
+                <h1 class="text-3xl text-gray-900">
+                    Dev<span class="font-bold">Board</span>
+                </h1>
+
+            </div>
+
+
+            <button id="backButton" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg transition">
+                Back to Desk
+            </button>
+
+        </header>
+
+
+        <!-- Blog Title -->
+        <h1 class="text-center text-3xl font-bold mt-12 mb-7">
+            Blogs
+        </h1>
+
+
+        <!-- Blog Questions -->
+        <main class="space-y-6">
+
+            <!-- Question 1 -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                <div class="p-6 border-b border-dashed border-gray-400">
+
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </h2>
+
+                </div>
+
+                <div class="p-6 text-gray-400 text-lg leading-relaxed">
+
+                    We can select elements using
+                    getElementById,
+                    getElementsByClassName,
+                    getElementsByTagName,
+                    querySelector,
+                    and querySelectorAll.
+
+                </div>
+
+            </article>
+
+
+            <!-- Question 2 -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                <div class="p-6 border-b border-dashed border-gray-400">
+
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Question-2: What is the difference between innerHTML, innerText, and textContent?
+                    </h2>
+
+                </div>
+
+                <div class="p-6 text-gray-400 text-lg leading-relaxed">
+
+                    innerHTML returns HTML content,
+                    innerText gets visible text,
+                    and textContent retrieves all text,
+                    including hidden elements.
+
+                </div>
+
+            </article>
+
+
+            <!-- Question 3 -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                <div class="p-6 border-b border-dashed border-gray-400">
+
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Question-3: What is event delegation in the DOM?
+                    </h2>
+
+                </div>
+
+                <div class="p-6 text-gray-400 text-lg leading-relaxed">
+
+                    Event delegation is a technique where you add a single
+                    event listener to a parent element to handle events
+                    for all its current and future child elements,
+                    leveraging event bubbling.
+
+                </div>
+
+            </article>
+
+
+            <!-- Question 4 -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                <div class="p-6 border-b border-dashed border-gray-400">
+
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Question-4: What is event bubbling in the DOM?
+                    </h2>
+
+                </div>
+
+                <div class="p-6 text-gray-400 text-lg leading-relaxed">
+
+                    Event bubbling is a mechanism in the DOM where an event
+                    triggered on a child element propagates upward through
+                    its parent elements in the hierarchy.
+
+                </div>
+
+            </article>
+
+
+            <!-- Question 5 -->
+            <article class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                <div class="p-6 border-b border-dashed border-gray-400">
+
+                    <h2 class="text-xl md:text-2xl font-bold">
+                        Question-5: How do you create, add, and remove elements using JavaScript?
+                    </h2>
+
+                </div>
+
+                <div class="p-6 text-gray-400 text-lg leading-relaxed">
+
+                    We can create an element using
+                    document.createElement(),
+                    add it with appendChild()
+                    and remove it with removeChild().
+
+                </div>
+
+            </article>
+
+        </main>
+
+    </div>
+
+
+    <script>
+        document.getElementById("backButton").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+
+</html>
